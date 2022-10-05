@@ -10,6 +10,11 @@
     display: flex;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
 .debug{
     background-color: rgba(139, 236, 93, 0.479);
     border: 1px solid black;
@@ -22,7 +27,7 @@ header{
     width: 100vw;
     border: 1px solid black;
     position: fixed;
-    
+    background-color: aqu;
     z-index: 4;
 }
 
@@ -38,10 +43,16 @@ header{
     background-image: url(../img/sidebar-bg.png), linear-gradient(rgb(5, 30, 52), rgb(14, 38, 60));
     justify-content: space-between;
     color: white;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sidenav .container ul{
     padding-left: 0;
+}
+
+.sidenav .container i{
+    font-size: 1.1rem;
 }
 
 .sidenav .container ul li{
@@ -61,6 +72,8 @@ main{
     top: 54px;
     right: 0;
     width: calc(100vw - 10%);
+    font-size: 0.7rem;
+    
 }
 
 .blue-container{
@@ -68,4 +81,8 @@ main{
     width: 100%;
     background-color: rgb(26, 115, 232);
 
+}
+
+.btn-group-sm>.btn, .mz-btn-sm{
+    padding: 0.2rem;
 }
