@@ -36,7 +36,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 
                 <div class="bd-search" id="docsearch" data-bd-docs-version="5.2"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="690" height="20" class="DocSearch-Search-Icon" viewBox="320 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Prova a cercare 'Quanti ragazzi di classe 75 mangiano la pizza?'</span></span><span class="DocSearch-Button-Keys"></div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 ">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-list-ul"></i></a>
                   </li>
@@ -100,26 +100,27 @@
             </div>
             <div class="container m-0 ">
                 <div class="row">
-                    <div class="col-lg-8 m-1 col-md-12  ">
+                    <div class="col-md-8 m-1 col-lg-8 ">
                         <div class="box">
                             <div class="title d-flex h3">
                                 <span>Prossime classi</span>
-
+                                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-sliders border p-2 rounded-2"></i></button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                                </div>
                             </div>
                             <table class="table table-hover">
                                 <thead>
                                   <tr>
                                     <th scope="col">Nome</th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Data inizio</th>
+                                    <th scope="col" class="grande"></th>
+                                    <th scope="col date">Data inizio</th>
                                     <th scope="col">ROI</th>
                                     <th scope="col">Stato </th>
                                     <th scope="col">Azioni</th>
@@ -128,9 +129,9 @@
                                 <tbody>
                                     <tr>
                                         <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 75</th>
-                                        <th scope="col vuota"></th>
-
-                                        <th scope="col">15 Feb 2021</th>
+                                        
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">15 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success">Done</button></th>
                                         <th class="" scope="col">
@@ -139,17 +140,9 @@
                                         </th>
                                     </tr>
                                     <tr>
-                                        <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 76</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">16 Feb 2021</th>
+                                        <th scope="col first"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 76</th>
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">16 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success mz-btn-sm">Done</button></th>
                                         <th class="" scope="col">
@@ -159,16 +152,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 77</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">17 Feb 2021</th>
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">17 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success btn-sm">process</button></th>
                                         <th class="" scope="col">
@@ -178,16 +163,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 75</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">15 Feb 2021</th>
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">15 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success">Done</button></th>
                                         <th class="" scope="col">
@@ -197,16 +174,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 75</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">15 Feb 2021</th>
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">15 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success">Done</button></th>
                                         <th class="" scope="col">
@@ -216,16 +185,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 75</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">15 Feb 2021</th>
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">15 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success">Done</button></th>
                                         <th class="" scope="col">
@@ -235,16 +196,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 75</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">15 Feb 2021</th>
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">15 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success">Done</button></th>
                                         <th class="" scope="col">
@@ -254,16 +207,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="col"><i class="fa-solid fa-code border p-1 rounded-4 text-bg-danger"></i> Classe 75</th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
-                                        <th scope="col">15 Feb 2021</th>
+                                        <th scope="col" class="grande"></th>
+                                        <th scope="col date">15 Feb 2021</th>
                                         <th scope="col">20%</th>
                                         <th scope="col"><button type="button" class="btn btn-success">Done</button></th>
                                         <th class="" scope="col">
@@ -321,7 +266,7 @@
                         </div>
                         
                     </div>
-                    <div class="col-3 mz-col-3 m-1 ">
+                    <div class="col-3 col-md-3 mz-col-3 m-1 ">
                         <div class="box">
                             <div class="title d-flex h3">
                                 <span>F.A.Q</span>
@@ -345,7 +290,7 @@
                         
                         <div class="box">
                             
-                            <div class="card" style="width: 28rem;">
+                            <div class="card" style="width: 100%;">
                                 <img src="img/chart.jpg" class="card-img-top" alt="chart">
                                 <div class="card-body">
                                   <h5 class="card-title">Utenti attivi</h5>

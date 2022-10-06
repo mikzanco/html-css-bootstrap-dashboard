@@ -10,7 +10,7 @@
     width: 100vw;
     height: calc(100vh - 54px);
     position: relative;
-    top: -46px;
+    top: 6px;
     bottom: 0;
 }
 
@@ -34,7 +34,7 @@
     height: 47px;
     width: 100%;
     justify-content: space-between;
-    background-color: rgb(149, 149, 149);
+    background-color: rgb(214, 214, 214);
     font-size: ;
 }
 
@@ -65,7 +65,7 @@ header{
     height: calc(100vh - 54px);
     position: relative;
     left: 0;
-    top: 54px;
+    /* top: 54px; */
     width: calc(100vw - 90%);
     border: 1px solid black;
     background-image: url(../img/sidebar-bg.png), linear-gradient(rgb(5, 30, 52), rgb(14, 38, 60));
@@ -96,7 +96,7 @@ header{
 
 main{
     position: relative;
-    top: 54px;
+    /* top: 54px; */
     right: 0;
     width: calc(100vw - 10%);
     font-size: 0.7rem;
@@ -122,16 +122,21 @@ tbody, td, tfoot, th, thead, tr:first-child{
     border-bottom-color: black ;
 }
 
-table tbody tr th .col.vuota{
-    padding: 0 20px;
+table tbody tr .grande{
+    width: 35%;
 }
 
 .btn-group-sm>.btn, .mz-btn-sm{
     padding: 0.2rem;
 }
 
-.col-3.mz-col-3 .box{
-    width: 460px;
+.col-3 .mz-col-3 .box{
+    width: 100%;
+    max-width: 470px;
+}
+
+.col-3 .box .card{
+    
 }
 
 /* Media Query */
@@ -144,6 +149,14 @@ table tbody tr th .col.vuota{
 
     .sidenav .container ul li i{
         margin-left: 17px;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+
+    table thead tr:nth-child(3), table tbody tr:nth-child(3){
+        display: none;
     }
     
 }
